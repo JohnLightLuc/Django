@@ -1,4 +1,4 @@
-# specialDjango
+# Django
 
 ## Context processors
 
