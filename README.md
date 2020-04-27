@@ -45,7 +45,7 @@
 1-Import 
 
     ...
-    from django.utilis.text iimport slugify
+    from django.utilis.text import slugify
     import hashlib
   
 2- Class
@@ -56,12 +56,13 @@
         ....
         
         def save(self, *args, **kwargs):
-            super(Evenement, self).save(*args, **kwargs)
+            super(Article, self).save(*args, **kwargs)
             encoded_id =hasblib.md5(str(self.id).encode())
-            self.titre_slug = slugify(self.titre +' '+str(encode_id.hexdigest()))
-            super(Evenement, self).save( *args, **kwargs)
+            self.titre_slug = slugify(self.titre +' '+str(encoded_id.hexdigest()))
+            super(Article, self).save( *args, **kwargs)
             
             
+       ex: lorem-ipsum-dolor-sit-amet-e4da3b7fbbce2345d7772b0674a318d5
             
            
                   
