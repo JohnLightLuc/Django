@@ -45,7 +45,7 @@
 1-Import 
 
     ...
-    from django.utilis.text import slugify
+    from django.utils.text import slugify
     import hashlib
   
 2- Class
